@@ -1,0 +1,151 @@
+/* 
+Box Model
+
+.conteudo {
+    border: 1px;
+    border-style: solid;
+    border-color: red;
+
+    Essa é o jeito normal de fazer um pedding
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; 
+    
+
+    
+    Esse modelo é igualmente ao aplicado ao de cima, porém ocupando somente uma única linha.
+    IMPORTANTE: Esse formato em escrever em apenas uma linha respeita o sentido horário.
+    20px TOP, 15px RIGHT, 10px BOTTOM, 5px LEFT
+    
+    padding: 20px 15px 10px 5px;
+    
+
+    Nesse formato é aplicado 20px no TOP e BOTTOM  e 5px LEFT e RIGHT. 
+    padding: 20px 5px 
+    
+
+    Nesse modelo é aplicado padding no tamanho padrão para todos os lados
+    padding: 20px;
+
+    O MARGIN segue o mesmo raciocínio do Padding 
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    width: 150px; Aqui mostra o tamanho total da caixa sem somar os paddings adicionados acima
+}
+/*
+/* */
+#noticia {
+    background-color: #f9f9f9;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+#tituloNoticia {
+    margin: 0px;
+}
+
+
+/* ELEMENTOS FLUTUANTES */
+
+.principalElementoFlutuante {
+    background-color: green;
+    border: 5px solid red;    
+}
+
+.conteudoElementoFlutuante {
+    background-color: blue;
+    border: 1px solid gray;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: left;
+}
+
+.clearElementoFlutuante {
+    clear: both;
+}
+/* */
+
+/* ELEMENTOS FLUTUANTES PRÁTICA */
+#principalElementoFlutuantePratica {
+    width: 920px;
+}
+
+#bodyElementosFlutuantesPratica {
+    background-color: #f4f4f4;
+}
+
+.noticiaElementoFlutuantePratica {
+    background-color: #e5e5e5;
+    padding: 5px;
+    width: 280px;
+    margin: 7px;
+    float: left;
+}
+
+.clearElementoFlutuantePratica {
+    clear: both;
+}
+
+.imagemGaleriaElementoFlutuantePratica {
+    background-color: white;
+    width: 265px;
+    padding: 5px;
+    float: left;
+    margin: 15px;
+}
+
+/* */
+
+/* ELEMENTO INLINE BLOCK */
+
+.bordaElementoInlineBlock {
+    border: 1px solid red;
+    margin: 10px;
+}
+
+.bordaElementoInlineBlockComDisplay {
+    border: 1px solid blue;
+    margin: 10px;
+    display: inline;
+}
+
+/* */
+
+/* POSICIONAMENTOS */
+#backgroundBodyPosicionamento {
+    background-color: #007fcf;
+}
+
+#containerPosicionamento {
+    background-color: #FFF;
+    width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+#h1Posicionamento {
+    position: static;
+}
+
+#pPosicionamento {
+    width: 300px;
+    position: static;
+}
+
+.relativeaPosicionamento {
+    width: 300px;
+    border: 1px solid red;
+    position: relative;
+    /* top, right, bottom, left */
+    top: -10px;
+    left: -80px;
+}
+
+
+
+

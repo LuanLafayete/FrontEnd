@@ -126,6 +126,7 @@ Box Model
     width: 800px;
     margin: 10px auto;
     padding: 10px;
+    position: relative;
 }
 
 #h1Posicionamento {
@@ -137,7 +138,8 @@ Box Model
     position: static;
 }
 
-.relativeaPosicionamento {
+/* AQUI EU USO UM DESCOLAMENTO NO PARÁGRAFO */
+.relativePosicionamento {
     width: 300px;
     border: 1px solid red;
     position: relative;
@@ -145,6 +147,59 @@ Box Model
     top: -10px;
     left: -80px;
 }
+
+.absolutePosicionamento {
+    position: absolute;
+    border: 1px solid red;
+    width: 300px;
+    top: 80px;
+    background-color: #f2f2f2;
+    right: 80px;
+}
+
+.fixedPosicionamento {
+    background-color: #f2f2f2;
+    border: 1px solid red;
+    position: fixed;
+    width: 300px;
+    top: 0px;
+    right: 0px;
+}
+
+/* SOBREPOSIÇÃO DOS ELEMENTOS */
+
+.conteudoSobreposicao1 {
+    background-color: orange;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+}
+
+.conteudoSobreposicao2 {
+    background-color: green;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 1;
+}
+
+.conteudoSobreposicao3 {
+    background-color: yellow;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    z-index: 0;
+}
+
+
 
 
 

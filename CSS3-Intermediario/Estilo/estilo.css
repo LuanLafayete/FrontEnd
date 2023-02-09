@@ -50,7 +50,6 @@ Box Model
 
 
 /* ELEMENTOS FLUTUANTES */
-
 .principalElementoFlutuante {
     background-color: green;
     border: 5px solid red;    
@@ -68,7 +67,6 @@ Box Model
 .clearElementoFlutuante {
     clear: both;
 }
-/* */
 
 /* ELEMENTOS FLUTUANTES PRÁTICA */
 #principalElementoFlutuantePratica {
@@ -99,10 +97,7 @@ Box Model
     margin: 15px;
 }
 
-/* */
-
 /* ELEMENTO INLINE BLOCK */
-
 .bordaElementoInlineBlock {
     border: 1px solid red;
     margin: 10px;
@@ -113,8 +108,6 @@ Box Model
     margin: 10px;
     display: inline;
 }
-
-/* */
 
 /* POSICIONAMENTOS */
 #backgroundBodyPosicionamento {
@@ -167,7 +160,6 @@ Box Model
 }
 
 /* SOBREPOSIÇÃO DOS ELEMENTOS */
-
 .conteudoSobreposicao1 {
     background-color: orange;
     border: 1px solid black;
@@ -197,6 +189,34 @@ Box Model
     top: 160px;
     left: 160px;
     z-index: 0;
+}
+
+/* FORMATAÇÃO DE LINKS */
+
+a{
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+/* Link não visitados (quando o usuário não acessou o link) */
+a:link {
+    color: #b9c941;
+}
+
+/* Link visitado (quando o usuário já acessou o link) */
+a:visited {
+    color: #b9c941;
+}
+
+/* Links Hover (quando passa o cursor do mouse por cima) */
+a:hover {
+    color: #FFF;
+    background-color: #6d790f;
+}
+
+/* Links ativos (quando o link é clicado) */
+a:active {
+    color:blue;
 }
 
 

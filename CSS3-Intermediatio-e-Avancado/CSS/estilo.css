@@ -1,0 +1,82 @@
+/* ***************** SELETORES ***************** */
+
+/* SELETOR UNIVERSAL
+* {
+    border: 1px solid red;
+} */
+
+/* SELETOR DE TEXTO 
+h1 {
+    color: green;
+} */
+
+/* SELETOR DE CLASSE 
+p.verde {
+    color: green;
+} */
+
+/* SELETOR DE ID 
+#cabecalho {
+    border: 1px solid blue;
+} */
+
+/* SELETOR DE FILHO 
+li>a {
+    text-decoration: none;
+    color: red;
+} */
+
+/* SELETOR DESCENDENTE
+div a {
+    text-decoration: none;
+    color: green;
+} */
+
+/* SELETOR IRMÃO ADJACENTE 
+h1+p {
+    color: red;
+} */
+
+/* SELETOR IRMÃO GERAL
+h1~p {
+    color: green;
+} */
+
+
+/* ***************** HERANÇA E ESPECIFICIDADES ***************** */
+
+/* HERENÇA 
+body {
+    color: red;
+} */
+
+/* ESPECIFICIDADE */
+P {
+    color: blue !important;
+}
+
+p {
+    color: red;}
+
+/* SEMPRE QUE HOUVER 2 SELETORES IGUAIS, O ÚLTIMO SERÁ APLICADO. SE USADO A EXPRESSÃO !IMPORTANT, DAÍ O SELETOR SERÁ USADO */
+
+* {
+    color: green;
+}
+
+h2 {
+    color: palevioletred;
+}
+
+h2.verde {
+    color: brown;
+}
+
+h2#amarelo {
+    color: yellow;
+}
+/* UM SELETOR MAIS ESPECÍFICO TERÁ PRECEDÊNCIA NA APLICAÇÃO DO QUE UM SELETOR UNIVERSAL */
+/* UM ID TEM MAIS PRECEDÊNCIA DO QUE UMA CLASS */
+
+
+

@@ -50,15 +50,17 @@ body {
     color: red;
 } */
 
-/* ESPECIFICIDADE */
+/* ESPECIFICIDADE 
 P {
     color: blue !important;
 }
 
 p {
-    color: red;}
+    color: red;
+}
+*/
 
-/* SEMPRE QUE HOUVER 2 SELETORES IGUAIS, O ÚLTIMO SERÁ APLICADO. SE USADO A EXPRESSÃO !IMPORTANT, DAÍ O SELETOR SERÁ USADO */
+/* SEMPRE QUE HOUVER 2 SELETORES IGUAIS, O ÚLTIMO SERÁ APLICADO. SE USADO A EXPRESSÃO !IMPORTANT, DAÍ O SELETOR SERÁ USADO 
 
 * {
     color: green;
@@ -75,8 +77,44 @@ h2.verde {
 h2#amarelo {
     color: yellow;
 }
+*/
+
 /* UM SELETOR MAIS ESPECÍFICO TERÁ PRECEDÊNCIA NA APLICAÇÃO DO QUE UM SELETOR UNIVERSAL */
 /* UM ID TEM MAIS PRECEDÊNCIA DO QUE UMA CLASS */
 
+/* ***************** NAVEGAÇÃO VERTICAL ***************** */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: #f7b600 url(../imagens/menu.png) no-repeat left bottom;    
+}
+
+a:hover {
+   background-position: right bottom; 
+   background-color: #f99200;
+   color: #fff;
+}
+
+
+#home #navegacao-lateral .home a, 
+#sobre #navegacao-lateral .sobre a,
+#servicoes #navegacao-lateral .servicoes a,
+#noticias #navegacao-lateral .noticias a,
+#contatos #navegacao-lateral .contatos a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #FFF;
+}
 
 

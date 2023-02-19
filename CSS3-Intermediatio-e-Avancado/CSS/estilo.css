@@ -207,12 +207,15 @@ body {
 }
 
 #container {
-    width: 720px;
+    width: 85% /*720px*/;
     margin: 0 auto;
     background: #fff;
+    min-width: 720px;
+    max-width: 1280px;
 }
 
 #marca {
+    width: 100%;
     height: 100px;
     background: #9E9E9E;
     text-align: center;
@@ -220,17 +223,17 @@ body {
 }
 
 #conteudo {
-    width: 520px;
+    width: 75%;
     float: right;
 }
 
 #conteudoPrincipal {
-    width: 320px;
+    width: 63% /*320px*/;
     float: left;
 }
 
 #conteudoSecundario {
-    width: 180px;
+    width: 34% /*180px*/;
     float: right;
     background: #d1d1d1;
 }
@@ -244,7 +247,7 @@ body {
 }
 
 #navegacao {
-    width: 180px;
+    width: 23%;
     float: left;
     padding-top: 20px;
     padding-bottom: 20px;

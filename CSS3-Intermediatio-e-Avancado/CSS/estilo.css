@@ -200,27 +200,33 @@ ul #atual a {
 } */
 
 
-/* ***************** LAYOUTS ***************** */
+/* ***************** LAYOUTS ***************** 
 body {
     font-family: Trebuchet MS, Helvetica, sans-serif;
     background: #f2f2f2;
 }
 
 #container {
-    width: 85% /*720px*/;
+    width: 960px;
     margin: 0 auto;
-    background: #fff;
+    background: #fff url(../imagens/coluna.png) repeat-y left top;
     min-width: 720px;
     max-width: 1280px;
 }
 
 #marca {
     width: 100%;
-    height: 100px;
-    background: #9E9E9E;
+    height: 200px;
+    background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center;
     text-align: center;
-    line-height: 100px;
+    line-height: 200px;
 }
+
+/*
+#imagem {
+    width: 90%;
+    overflow: hidden;
+} 
 
 #conteudo {
     width: 75%;
@@ -228,12 +234,18 @@ body {
 }
 
 #conteudoPrincipal {
-    width: 63% /*320px*/;
+    width: 63% /*320px;
     float: left;
 }
 
+img.img-noticia {
+    width: 94%;
+    padding: 2%;
+    max-width: 600px;
+}
+
 #conteudoSecundario {
-    width: 34% /*180px*/;
+    width: 34% /*180px;
     float: right;
     background: #d1d1d1;
 }
@@ -251,7 +263,7 @@ body {
     float: left;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #d1d1d1;
+    /*background: #d1d1d1; 
 }
 
 #navegacao ul {
@@ -268,3 +280,184 @@ body {
     padding: 5px;
     text-align: center;
 }
+
+*/
+
+/* ***************** ESTILIZANDO TABELAS ***************** 
+
+body {
+    font-family: trebuchet MS, helvetica, sans-serif;
+}
+
+table {
+    width: 600px;
+    border-collapse: separate /*collapse;
+}
+
+th, td {
+    padding: 7px;
+}
+
+th {
+    text-transform: uppercase;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left;
+    font-size: 90%;
+    letter-spacing: 0.1em;
+}
+
+tr.alterna {
+    background-color: #efefef;
+}
+
+tr:hover {
+    background-color: aqua;
+}
+
+.numero {
+    text-align: right;
+}
+
+*/
+
+/* ***************** ESTILIZANDO FORMULÁRIOS ***************** 
+body {
+    font-family: trebuchet MS, Helvetica, sans-serif;
+}
+
+fieldset {
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    margin: 1em 0;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input /* [type="radio"]  { 
+    width: 20em;
+}
+
+textarea {
+    width: 20em;
+    height: 10em;
+}
+
+input.radio, input.checkbox, input.submit {
+    width: auto;
+}
+
+.radio {
+    margin-right: 1em;
+}
+
+*/
+
+/* ***************** ESTILIZANDO FORMULÁRIO 2 ***************** 
+body {
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+    background: #643d87 url(../imagens/fundo.jpg) no-repeat top center;
+}
+
+#container {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-border-radiuns: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;    
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+}
+
+#container img {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+input {
+    height: 40px;
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 40px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+input.email {
+    background-image: url(../imagens/icone-usuario.png);
+}
+
+input.senha {
+    background-image: url(../imagens/icone-cadeado.png);
+}
+
+input.submit {
+    color: #fff;
+    background-color: #f79300;
+    border: 2px solid #db7d00;
+    padding: 5px 20px;
+    height: 45px;
+    width: 90%;
+
+    background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+    background: linear-gradient(to bottom, #faa600, #f68a00);
+}
+
+*/
+
+/* ***************** ARREDONDAMENTO ***************** */
+.caixa {
+    width: 400px;
+    background: #dedede url(../imagens/fundo-arredondamento.png) repeat-y;
+}
+
+.caixa h2 {
+    padding: 10px 20px 0 20px;
+    background: url(../imagens/topo2.png) no-repeat left top;
+}
+
+.caixa p {
+    padding: 0 20px;
+    margin-bottom: 0;
+}
+
+.caixa .ultimo {
+    background: url(../imagens/baixo2.png)no-repeat left bottom;
+    width: 400px;
+    height: 24px;
+}
+
+
+/*
+.caixa {
+    width: 400px;
+    background: #dedede url(../imagens/topo2.png) no-repeat left top;
+}
+
+.caixa h2 {
+    padding: 10px 20px 0 20px;
+}
+
+.caixa p {
+    background: url(../imagens/baixo2.png) no-repeat left bottom;
+    padding: 0px 20px 20px 20px;
+}
+*/
+

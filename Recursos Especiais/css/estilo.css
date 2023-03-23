@@ -1,5 +1,4 @@
 /* ************ FORMATAÇÃO DO BORDER RADIUS E BOX SIZING ************ */
-
 #caixa {
     width: 300px;
     height: 300px;
@@ -21,6 +20,8 @@
     box-sizing: border-box;
     margin: 50px;
 }
+
+
 
 /* ************ FORMATAÇÃO DEGRADE ************ */
 #caixaDegrade {
@@ -49,6 +50,75 @@
     height: 300px;
     background: radial-gradient(white, black, gray);
 }
+
+
+
+
+/* ************ FORMATAÇÃO SOMBRA ************ */
+#caixaSombra {
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    background: #009670;
+}
+
+#caixaSombra h1 {
+    color: white;
+    text-shadow: 10px 10px black;
+}
+
+#caixaSombra2 {
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    background: #ee08a1;
+    box-shadow: 10px 10px 10px 15px rgb(0, 0, 0);
+}
+
+#caixaSombra2 h1 {
+    color: white;
+    text-shadow: 10px 10px 4px rgba(12, 12, 12, 0.3);
+}
+
+
+
+/* ************ FORMATAÇÃO ANIMAÇÕES ************ */
+@keyframes animacaoCaixa {
+    from {
+        background: red;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+    to {
+        background: black;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+#caixaAnimacao {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 50px;
+    background: red;
+    position: relative;
+    /*
+    animation-name: animacaoCaixa;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 5;
+    animation-direction: alternate; 
+    */
+
+    animation: animacaoCaixa 5s 3s 4 alternate;
+}
+
+
 
 
 /* ************ FORMATAÇÃO DA IMAGENS ************ */

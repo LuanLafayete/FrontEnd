@@ -1,0 +1,60 @@
+/* ************ FORMATAÇÃO DO BORDER RADIUS E BOX SIZING ************ */
+
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: #d3ee07;
+    padding: 10px;
+    -webkit-border-radius: 10px 50px 80px 80px;
+    -moz-border-radius: 10px 50px 80px 80px;
+    border-radius: 10px 50px 80px 80px;
+    margin: 50px;
+}
+
+#caixa2 {
+    width: 300px;
+    height: 300px;
+    background: #e98708;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 50px;
+}
+
+/* ************ FORMATAÇÃO DEGRADE ************ */
+#caixaDegrade {
+    width: 300px;
+    height: 300px;
+    background: url(../imagens/camera.png);
+}
+
+#caixaDegrade h1 {
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+#caixaDegrade p {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+#caixaGradient {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(60deg, rgb(168, 168, 160), rgb(42, 43, 42), #FFF, black);
+}
+
+#caixaRadialGradient {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(white, black, gray);
+}
+
+
+/* ************ FORMATAÇÃO DA IMAGENS ************ */
+
+.arredondamento {
+    border-radius: 200px;
+    float: left;
+    padding: 10px;
+}

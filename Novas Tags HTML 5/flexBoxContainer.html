@@ -12,24 +12,71 @@
                 height: 600px;
                 display: flex;
 
-                /* row | row-reverse | column | column-reverse */
-                flex-direction: row;
+                /* row | row-reverse | column | column-reverse
+                flex-direction: row; */
 
-                /* nowrap | wrap | wrap-reverse */
-                flex-wrap: nowrap;
+                /* nowrap | wrap | wrap-reverse 
+                flex-wrap: nowrap; */
 
-                /* flex-start | flex-end | center | space-between | space-around */
-                justify-content: space-around;
+                /* flex-start | flex-end | center | space-between | space-around 
+                justify-content: space-around; */
 
-                /* strech | center | flex-start | flex-end | baseline */
-                align-items: baseline;
+                /* strech | center | flex-start | flex-end | baseline 
+                align-items: baseline; */
             }
 
             .item {
+                /* width: 200px; */
+                height: 100px;
                 margin: 10px;
                 background: white;
                 border: 1px solid gray;
+
+                /* Define proporção de espaço ocupado por um item */
+                flex-grow: 0;
+
+                /* Define a capacidade de redução de tamanho */
+                flex-shrink: 1;
+
+                /* indica o tamanho inicial do flex item antes da distribuição do espaço restante */
+                flex-basis: 100px;
+            } 
+
+            .item1 {
+                /* flex-grow: 1; */
+                /* flex-shrink: 1; */
             }
+
+            .item2 {
+                flex-grow: 1;
+                /* flex-shrink: 2; */
+            }
+
+            .item3 {
+                flex-grow: 2;
+                /* flex-shrink: 5; */
+            }
+
+            /*
+            .order1 {
+                order: 1;
+            }
+
+            .order2 {
+                order: 2;
+            }
+
+            .order3 {
+                order: 3;
+            }
+
+            .order4 {
+                order: 4;
+            }
+
+            .order {
+                order: -1;
+            } */
 
         </style>
         
@@ -39,9 +86,9 @@
         
        <h1>Flex Box</h1>
        <div id="conteudo">
-            <div class="item">01</div>
-            <div class="item">02</div>
-            <div class="item">03</div>
+            <div class="item item1">01</div>
+            <div class="item item2">02</div>
+            <div class="item item3">03</div>
             <div class="item">04</div>
        </div>
         

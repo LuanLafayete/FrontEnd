@@ -328,33 +328,209 @@
 
         <!--
             Paginação:
-            Options: pagination, page-item, page-link, page-active, page-disable
+            Options: pagination, page-item, page-link, active, page-disable
         -->
         <h4>Paginação</h4>
         <nav>
-            <ul>
-                <li>
-                    <a href="#">Anterior</a>
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a href="#" class="page-link">Anterior</a>
                 </li>
 
-                <li>
-                    <a href="#">1</a>
+                <li class="page-item active">
+                    <a href="#" class="page-link">1</a>
                 </li>
 
-                <li>
-                    <a href="#">2</a>
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
                 </li>
 
-                <li>
-                    <a href="#">3</a>
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
                 </li>
 
-                <li>
-                    <a href="#">4</a>
+                <li class="page-item">
+                    <a href="#" class="page-link">4</a>
                 </li>
 
-                <li>
-                    <a href="#">Próximo</a>
+                <li class="page-item">
+                    <a href="#" class="page-link">Próximo</a>
+                </li>
+            </ul>
+        </nav>
+
+        <br>
+        <br>
+
+        <!--
+            Alinhamento
+            Options: justify-content-center, justify-cotent-end
+        -->
+        <h4>Alinhamento da paginação</h4>
+        <nav>
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a href="#" class="page-link">Anterior</a>
+                </li>
+
+                <li class="page-item active">
+                    <a href="#" class="page-link">1</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">4</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">Próximo</a>
+                </li>
+            </ul>
+        </nav>
+
+        <br>
+        <br>
+
+        <!--
+            Tamanhos:
+            Options: pagination-sm, pagination-lg
+        -->
+        <h4>Tamanho da paginação</h4>
+        <h5 style="text-align: center;">Grande</h5>
+        <nav>
+            <ul class="pagination pagination-lg justify-content-center">
+                <li class="page-item disabled">
+                    <a href="#" class="page-link">Anterior</a>
+                </li>
+
+                <li class="page-item active">
+                    <a href="#" class="page-link">1</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">4</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">Próximo</a>
+                </li>
+            </ul>
+        </nav>
+
+        <br>
+
+        <h5 style="text-align: center;">Médio (Padrão)</h5>
+        <nav>
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a href="#" class="page-link">Anterior</a>
+                </li>
+
+                <li class="page-item active">
+                    <a href="#" class="page-link">1</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">4</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">Próximo</a>
+                </li>
+            </ul>
+        </nav>
+
+        <br>
+
+        <h5 style="text-align: center;">Pequeno</h5>
+        <nav>
+            <ul class="pagination pagination-sm justify-content-center">
+                <li class="page-item disabled">
+                    <a href="#" class="page-link">Anterior</a>
+                </li>
+
+                <li class="page-item active">
+                    <a href="#" class="page-link">1</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">4</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">Próximo</a>
+                </li>
+            </ul>
+        </nav>
+
+        <br>
+        <br>
+
+        <!--
+            Setas
+        -->
+        <h5>Setas de navegação</h5>
+        <nav>
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a href="#" class="page-link">
+                        <span>&laquo;</span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                </li>
+
+                <li class="page-item active">
+                    <a href="#" class="page-link">1</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">4</a>
+                </li>
+
+                <li class="page-item">
+                    <a href="#" class="page-link">
+                        <span>&raquo;</span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
                 </li>
             </ul>
         </nav>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <title>Bootstrap - Sistema de grid</title>
+
+          <!-- Required meta tags -->
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+          <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/1a7ed97bb5.js" crossorigin="anonymous"></script>
+
+        <!--Stylesheet-->
+        <style>
+            .marcador {
+                background: #fe9d9d;
+                border: 1px solid #f94646;
+            }
+
+            .marcadorContainer {
+                background: #5bf946;
+                border: 1px solid #36ae26;
+            }
+        </style>
+    </head>
+
+
+    <body style="margin-bottom: 200px; padding: 16px;">
+        
+        <!--
+            Documentação
+        -->
+        <h4>Documentação</h4>
+        <a href="https://getbootstrap.com.br/docs/4.1/layout/grid/">Sistema de Grid</a>
+        
+        <br>
+        <br>
+        
+        <!--
+            Grid
+        -->
+        <h4>Grid</h4>
+        <h5 class="text-center">Aumenta e diminui o tamanho da tela para ver o que acontece</h5>
+        <div class="container marcadorContainer">
+
+            <div class="row">
+                <div class="marcador col-6 col-sm-2 col-md-10 col-lg-2 col-xl-8">
+                    área 1
+                </div>
+
+                <div class="marcador col-6 col-sm-10 col-md-2 col-lg-10 col-xl-4">
+                    área 2
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+
+        <!--
+            Grid sem o extra small e o small
+        -->
+        <h4>Grid sem o extra small e o small</h4>
+        <h5 class="text-center">Nesse caso, veja que quando diminui para small e extra small as linhas são divididas em 2</h5>
+        <div class="container marcadorContainer">
+
+            <div class="row">
+                <div class="marcador col-md-10 col-lg-2 col-xl-8">
+                    área 1
+                </div>
+
+                <div class="marcador col-md-2 col-lg-10 col-xl-4">
+                    área 2
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+
+        <!--
+            Exemplo de caso real
+        -->
+        <h4>GRID - Caso real</h4>
+        <div class="container marcadorContainer">
+
+            <div class="row">
+                
+                <div class="marcador col-md-4 ">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptate consequatur, tenetur fugiat sit ex assumenda reprehenderit fuga in autem eaque iste placeat maxime sapiente illo deleniti pariatur provident vitae!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eos dolorem nostrum. Sequi a molestiae facere sint repudiandae laudantium veniam quae? Perspiciatis, fugiat? Sequi minima consectetur deleniti distinctio vel aspernatur.
+                    </p>
+                    <button class="btn btn-outline-primary">Leia mais</button>
+                </div>
+
+                <div class="marcador col-md-4 ">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptate consequatur, tenetur fugiat sit ex assumenda reprehenderit fuga in autem eaque iste placeat maxime sapiente illo deleniti pariatur provident vitae!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eos dolorem nostrum. Sequi a molestiae facere sint repudiandae laudantium veniam quae? Perspiciatis, fugiat? Sequi minima consectetur deleniti distinctio vel aspernatur.
+                    </p>
+                    <button class="btn btn-outline-primary">Leia mais</button>
+                </div>
+
+                <div class="marcador col-md-4 ">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptate consequatur, tenetur fugiat sit ex assumenda reprehenderit fuga in autem eaque iste placeat maxime sapiente illo deleniti pariatur provident vitae!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eos dolorem nostrum. Sequi a molestiae facere sint repudiandae laudantium veniam quae? Perspiciatis, fugiat? Sequi minima consectetur deleniti distinctio vel aspernatur.
+                    </p>
+                    <button class="btn btn-outline-primary">Leia mais</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <br>
+        <br>
+
+        <!--
+            Exemplo de caso real com quebra de linha
+        -->
+        <h4>GRID - Caso real com quebra de linha</h4>
+        <div class="container marcadorContainer">
+
+            <div class="row">
+                
+                <div class="marcador col-md-6 col-lg-4 ">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptate consequatur, tenetur fugiat sit ex assumenda reprehenderit fuga in autem eaque iste placeat maxime sapiente illo deleniti pariatur provident vitae!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eos dolorem nostrum. Sequi a molestiae facere sint repudiandae laudantium veniam quae? Perspiciatis, fugiat? Sequi minima consectetur deleniti distinctio vel aspernatur.
+                    </p>
+                    <button class="btn btn-outline-primary">Leia mais</button>
+                </div>
+
+                <div class="marcador col-md-6 col-lg-4">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptate consequatur, tenetur fugiat sit ex assumenda reprehenderit fuga in autem eaque iste placeat maxime sapiente illo deleniti pariatur provident vitae!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eos dolorem nostrum. Sequi a molestiae facere sint repudiandae laudantium veniam quae? Perspiciatis, fugiat? Sequi minima consectetur deleniti distinctio vel aspernatur.
+                    </p>
+                    <button class="btn btn-outline-primary">Leia mais</button>
+                </div>
+
+                <div class="marcador col-md-12 col-lg-4">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptate consequatur, tenetur fugiat sit ex assumenda reprehenderit fuga in autem eaque iste placeat maxime sapiente illo deleniti pariatur provident vitae!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eos dolorem nostrum. Sequi a molestiae facere sint repudiandae laudantium veniam quae? Perspiciatis, fugiat? Sequi minima consectetur deleniti distinctio vel aspernatur.
+                    </p>
+                    <button class="btn btn-outline-primary">Leia mais</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+          
+    </body>
+  
+</html>

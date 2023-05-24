@@ -33,23 +33,175 @@
     </head>
 
 
-    <body style="margin-bottom: 200px; padding: 16px;">
+    <body style="padding-bottom: 80px;">
         
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 m-auto">
+
+                    <h1>Slider Simples</h1>
+                    <div class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="imagens/imagem1.jpeg" class="img-fluid">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="imagens/imagem2.jpeg" class="img-fluid">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="imagens/imagem3.jpeg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <h1>Slider com controle</h1>
+                    <div id="carouselControles" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="imagens/imagem1.jpeg" class="img-fluid">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="imagens/imagem2.jpeg" class="img-fluid">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="imagens/imagem3.jpeg" class="img-fluid">
+                            </div>
+
+                        </div>
+
+                        <!--Início do controle Carousel-->
+                        <a href="#carouselControles" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+
+                        <a href="#carouselControles" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a> <!--Fim do controle do Carousel-->
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <h1>Slider com controle Indicadores</h1>
+                    <div id="carouselIndicadores" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators"> 
+                            
+                            <li class="active" data-target="#carouselIndicadores" data-slide-to="0"></li>
+
+                            <li data-target="#carouselIndicadores" data-slide-to="1"></li>
+
+                            <li data-target="#carouselIndicadores" data-slide-to="2"></li>
+
+                        </ol>
 
 
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="imagens/imagem1.jpeg" class="img-fluid">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="imagens/imagem2.jpeg" class="img-fluid">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="imagens/imagem3.jpeg" class="img-fluid">
+                            </div>
+
+                        </div>
+
+                        <!--Início do controle Carousel-->
+                        <a href="#carouselIndicadores" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+
+                        <a href="#carouselIndicadores" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a> <!--Fim do controle do Carousel-->
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <h1>Slider com legendas</h1>
+                    <div id="carouselLegenda" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators"> 
+                            
+                            <li class="active" data-target="#carouselLegenda" data-slide-to="0"></li>
+
+                            <li data-target="#carouselLegenda" data-slide-to="1"></li>
+
+                            <li data-target="#carouselLegenda" data-slide-to="2"></li>
+
+                        </ol>
 
 
-            
+                        <div class="carousel-inner">
 
+                            <div class="carousel-item active">
+                                <img src="imagens/imagem1.jpeg" class="img-fluid">
+                                <div class="carousel-caption"  style="background: gray;">
+                                    <h3>Item 01</h3>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam repudiandae id ea modi optio quisquam ipsum velit dolores. Ullam dicta obcaecati aperiam doloribus numquam nulla officiis repudiandae dolore debitis aliquid?
+                                        </p>
+                                </div>
+                            </div>
 
+                            <div class="carousel-item">
+                                <img src="imagens/imagem2.jpeg" class="img-fluid">
+                                <div class="carousel-caption">
+                                    <div style="background:black; opacity: 0.5;">
+                                        <h3>Item 02</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur alias magni, labore officiis officia corrupti quia ut praesentium! Fugit neque, delectus nisi tempore voluptate perspiciatis esse? Ipsum, vitae et?
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam accusamus quisquam modi tempora omnis quas eos sequi. Nihil ducimus, saepe, animi rerum modi fugit dicta eius nobis voluptate voluptatibus provident.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="carousel-item">
+                                <img src="imagens/imagem3.jpeg" class="img-fluid">
+                                <div class="carousel-caption">
+                                    <div style="background-color: aqua; color: black;">
+                                        <h3>Item 03</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad aperiam ea perferendis quo ullam quasi vitae. Unde earum beatae esse vitae tenetur, fugit natus deleniti officiis vero quos illo maxime!
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet placeat soluta veritatis molestiae iusto perspiciatis reiciendis, provident mollitia asperiores officiis cum inventore voluptatibus ducimus sunt? Laboriosam nostrum iusto sequi vitae.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatibus eius alias saepe dolores earum similique mollitia fugiat ex odit commodi perferendis, placeat ipsum minima minus possimus fugit iste? Mollitia.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
+                        </div>
 
+                        <!--Início do controle Carousel-->
+                        <a href="#carouselLegenda" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
 
+                        <a href="#carouselLegenda" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a> <!--Fim do controle do Carousel-->
+                    </div>
 
-
-
-
+                </div>
+            </div>
+        </div>
 
 
 

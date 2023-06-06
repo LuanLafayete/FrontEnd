@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Javascript - Operadores Aritméticos</title>
+
+    <script>
+
+      //VARIÁVEIS
+       var num1 = prompt("Digite o valor do num1");
+       var num2 = prompt("Digite o valor do num2");;
+
+       //CASTING
+       num1 = parseInt(num1);
+       num2 = parseInt(num2);
+       
+      //RESULTADO
+      document.write("A soma entre " + num1 + " e " + num2 + " é: " + (num1 + num2) + "<br />");
+      document.write("A subtração entre " + num1 + " e " + num2 + " é: " + (num1 - num2) + "<br />");
+      document.write("A multiplicação entre " + num1 + " e " + num2 + " é: " + (num1 * num2) + "<br />");
+      document.write("A divisão entre " + num1 + " e " + num2 + " é: " + (num1 / num2) + "<br />");
+      document.write("O resto da divisão entre " + num1 + " e " + num2 + " é: " + (num1 % num2) + "<br />" + "<br />");
+
+      document.write("O incremento de " + num1 + " é: " + (++num1) + "<br />"); //pré
+      document.write("O incremento de " + num1 + " é: " + (num1++) + "<br />" ); //pós
+      document.write("Valor atualizado de " + num1 + "<br />" + "<br />");
+
+      document.write("O decremento de " + num2 + " é: " + (--num2) + "<br />"); //pré
+      document.write("O decremento de " + num2 + " é: " + (num2--) + "<br />"); //pós
+      document.write("Valor atualizado de " + num2 + "<br />" + "<br />");
+
+
+      //VARIÁVEIS
+      var teste1 = 100;
+      var teste2 = 200;
+      var teste3 = "Olá "
+
+      //FORMA SIMPLES
+      teste1 = teste1 + 5;
+
+      //FORMA SIMPLIFICADA COM CONCATENAÇÃO
+      // teste2 += 10;
+      // teste2 -= 10;
+      // teste2 *= 10;
+      // teste2 /= 10;
+      teste2 %= 9;
+
+      //CONCATENAÇÃO DE STRINGS
+      teste3 += "Luã";
+
+      //RESULTADOS
+      document.write(teste1 + "<br />");
+      document.write(teste2 + "<br />");
+      document.write(teste3 + "<br />");
+
+
+    </script>
+  </head>
+
+  <body>
+    
+  </body>
+</html>

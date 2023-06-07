@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Javascript - Desafio IMC</title>
+
+    <script>
+
+      var nome = prompt("Digite o seu nome: ");
+      var altura = prompt("Digite a sua altura em centímetros: ");
+      var peso = prompt("Digite o seu peso: ");
+      var imc;
+
+      altura = parseFloat(altura);
+      peso = parseFloat(peso);
+
+      altura /= 100;
+
+      imc = peso / (altura * altura);
+
+      document.write("Valor do imc: " + imc + "<br />")
+
+        if (imc < 16) 
+        {
+            document.write("Olá " + nome + ".<br />" + "Seu IMC é: " + imc + " e é considerado BAIXO PESO MUITO GRAVE.");
+        } 
+        else if (imc >= 16 && imc <= 16.99) 
+        {
+            document.write("Olá " + nome + ".<br />" + "Seu IMC é: " + imc + " e é considerado BAIXO PESO GRAVE.");
+        }
+        else if (imc >= 17 && imc <= 18.49) 
+        {
+            document.write("Olá " + nome + ".<br />" + "Seu IMC é: " + imc + " e é considerado BAIXO PESO.");
+        }
+        else if (imc >= 18.50 && imc <= 24.99)
+        {
+            document.write("Olá " + nome + ".<br />" + "Seu IMC é: " + imc + " e é considerado PESO NORMAL.");
+        }  
+        else if (imc >= 25 && imc <= 29.99)
+        {
+            document.write("Olá " + nome + ".<br />" + "Seu IMC é: " + imc + " e é considerado SOBREPESO.");
+        }
+        else if (imc >= 30 && imc <= 34.99)
+        {
+            document.write("Olá " + nome + ".<br />" + "Seu IMC é: " + imc + " e é considerado OBESIDADE GRAU I.");
+        }
+        else if (imc >= 35 && imc <= 39.99)
+        {
+            document.write("Olá " + nome + ".<br />" + "Seu IMC é: " + imc + " e é considerado OBESIDADE GRAU II.");
+        }
+        else
+        {
+            document.write("Olá " + nome + ".<br />" + "Seu IMC é: " + imc + " e é considerado OBESIDADE GRAU III.");
+        }
+        
+
+
+    </script>
+  </head>
+
+  <body>
+    
+  </body>
+</html>

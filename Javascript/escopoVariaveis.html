@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript - Escopo de variáveis</title>
+
+        <script>
+            //Existem 3 tipo de variáveis de escopo: global, função, bloco
+            
+            /* 
+                Variával Global: pode ser acessada em todas as partes do Script
+            */
+            var serie = "Friends"; 
+
+            if (true) 
+            {
+                /* 
+                    Variável de bloco: pode sofrer elevação para uma Variável Global e ser acessado em todas as partes do Script
+                */
+                var serie2 = "Game of Thrones" //Variável de bloco que sofre elevação para variável global.
+                document.write(serie);    
+            }
+
+            document.write("<br />")
+
+            function x() 
+            {
+                /* 
+                    Variável de função: Pode acessar as Variáveis Global e de Bloco, porém não dá acesso aos demais.
+                */
+                var serie3 = "The Walking Dead"
+                document.write(serie3);
+                document.write(serie2);   
+                document.write(serie); 
+            }
+
+            x()
+
+            document.write("<br />")
+            document.write(serie2);
+            document.write(serie);
+            document.write(serie3);
+
+        </script>
+
+    </head>
+
+    <body>
+        
+    </body>
+</html>

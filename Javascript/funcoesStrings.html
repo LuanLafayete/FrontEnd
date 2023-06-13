@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript - Funções Strings</title>
+
+        <script>
+
+            var nome = "Luan Lafayete"; 
+
+            //Propriedade lenght 
+            //Usado para contar a quantidade de caracteres dentro de um string.
+            document.write("<h3>Propriedade Length</h3>")
+            document.write(nome.length);
+
+            document.write("<br />");
+            document.write("<br />");
+
+            //Método CharAt()
+            //Usado para buscar qual string está dentro da posição solicitada.
+            document.write("<h3>Método CharAt( )</h3>")
+            document.write(nome.charAt(7));
+
+            document.write("<br />");
+            document.write("<br />");
+
+            //Método IndexOf()
+            //Usado para buscar a primeira ocorrência de um caracter solicitado.
+            document.write("<h3>Método IndexOf( )</h3>")
+            document.write(nome.indexOf("y"));
+
+            document.write("<br />");
+            document.write("<br />");
+
+            //Método Replace()
+            //Usado para substituir os caracteres informados
+            document.write("<h3>Método Replace( )</h3>")
+            document.write(nome.replace("Lafayete", "do Vale"));
+
+            document.write("<br />");
+            document.write("<br />");
+
+            //Método Substr()
+            //Usado para fazer um recorte na string informando onde se deseja iniciar e parar
+            document.write("<h3>Método Substr( )</h3>")
+            document.write(nome.substr(5, 12));
+
+            document.write("<br />");
+            document.write("<br />");
+
+            //Método toLowerCase()
+            //Usado para transformar todos os caracteres em minúsculo
+            document.write("<h3>Método toLowerCase( )</h3>")
+            document.write(nome.toLowerCase());
+
+            document.write("<br />");
+            document.write("<br />");
+
+            //Método toUpperCase()
+            //Usado para transformar todos os caracteres em maiúsculo
+            document.write("<h3>Método toUpperCase( )</h3>")
+            document.write(nome.toUpperCase());
+
+            document.write("<br />");
+            document.write("<br />");
+
+            //Método trim()
+            //Usado para remover os espaços nas extremidades do string
+            document.write("<h3>Método trim( )</h3>")
+            document.write('-' + " Luan Lafayete ".trim() + '-');
+
+        </script>
+
+    </head>
+
+    <body>
+        
+    </body>
+</html>

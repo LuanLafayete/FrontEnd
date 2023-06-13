@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript - Funções Adicionando ou Removendo datas</title>
+
+        <script>
+
+            var data = new Date();
+
+            document.write("<h3> Calendário correto </h3>");
+            document.write(data.toString());
+            
+            document.write("<hr />");
+
+            //Adicionando e removendo dias
+            document.write("<h3> Adicionando ou Removendo dias </h3>");
+            data.setDate(data.getDate() + 1);     
+            document.write(data.toDateString());
+
+            document.write("<hr />");
+
+            //Adicionando e removendo meses
+            document.write("<h3> Adicionando ou Removendo meses </h3>");
+            data.setMonth(data.getMonth() + 6);     
+            document.write(data.toDateString());
+
+            document.write("<hr />");
+
+            //Adicionando e removendo anos
+            document.write("<h3> Adicionando ou Removendo anos </h3>");
+            data.setFullYear(data.getFullYear() + 12);     
+            document.write(data.toDateString());
+
+        </script>
+
+    </head>
+
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript - Funções Calculando datas</title>
+
+        <script>
+
+           //15/01/2023
+            var data1 = new Date(2023, 0, 15);
+
+           //23/02/2023
+           var data2 = new Date(2023, 1, 23);
+
+           document.write(data1.toDateString());
+           document.write("<hr />");
+           document.write(data2.toDateString());
+
+           document.write("<br /><br /><hr />");
+           //Converter datas para algo que possamos calcular
+           document.write(data1.getTime());
+           document.write("<hr />");
+           document.write(data2.getTime());
+
+           document.write("<br /><br /><hr />");
+           //Encontrar o resultado de data1 e data2
+           var milessegundoEntreDatas = Math.abs(data1.getTime() - data2.getTime())
+           document.write(milessegundoEntreDatas);
+
+           document.write("<br /><br /><hr />");
+           //1 dia tem 24 horas, cada hora tem 60 minutos, cada minuto tem 60 segundos e cada segundo tem 1000 milessegundo
+           //Então quantos milessegundos existem em um dia?
+           var milessegundoPordia = (1*24*60*60*1000);
+           document.write("1 dia tem: " + milessegundoPordia + " milessegundos");
+
+           document.write("<br /><br /><hr />");
+           document.write("A diferença entre data1 e data2 é de: " + (Math.ceil(milessegundoEntreDatas / milessegundoPordia) + " dia(s)"));
+
+           
+
+           
+        </script>
+
+    </head>
+
+    <body>
+        
+    </body>
+</html>

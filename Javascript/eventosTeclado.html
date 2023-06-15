@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript - Evento taclado</title>
+
+        <script>
+
+           function acao1() {
+            alert("Evento 1 disparado");
+           }
+
+           function acao2() {
+            alert("Evento 2 disparado");
+           }
+
+           function acao3() {
+            alert("Evento 3 disparado");
+           }
+
+        </script>
+    </head>
+    <body>
+       
+        <h4>Evento onkeydown</h4>
+        <input onkeydown="acao1()" type="text">
+
+        <br>
+        <br>
+
+        <h4>Evento onkeyup</h4>
+        <input onkeyup="acao1()" type="text">
+
+        <br>
+        <br>
+
+        <!-- ONKEYPRESS Somente identifica quando há um caracter -->
+        <h4>Evento onkeypress</h4> 
+        <input onkeypress="acao3()" type="text">
+
+    </body>
+</html>

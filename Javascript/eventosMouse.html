@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript - Evento Mouse</title>
+
+        <script>
+
+            function acao1() {
+                alert("Você deu um clique no bloco");
+            }
+
+            function acao2() {
+                alert("Você deu dois clique no bloco");
+            }
+
+            function acao3() {
+                alert("Você soltou o botão do mouse.");
+            }
+
+            function acao4() {
+                alert("Você passou o mouse aqui");
+            }
+
+            function acao5() {
+                alert("Você saiu do bloco");
+            }
+
+        </script>
+    </head>
+    <body>
+        <div onclick="acao1()" style="background: #ccc; height: 150px; width: 150px; text-align: center;">
+            Dê um clique no bloco
+        </div>
+
+        <br>
+        <br>
+
+        <div ondblclick="acao2()" style="background: #d87b7b; height: 150px; width: 150px; text-align: center;">
+            Dê dois clique no bloco
+        </div>
+
+        <br>
+        <br>
+
+        <div onmouseup="acao3()" style="background: #d5df47; height: 150px; width: 150px; text-align: center;">
+            Dê o clique no bloco e segure. Ao soltar veja o que ocorre.
+        </div>
+
+        <br>
+        <br>
+
+        <div onmouseover="acao4()" style="background: #33a111; height: 150px; width: 150px; text-align: center;">
+            Passe o cursor no bloco.
+        </div>
+
+        <br>
+        <br>
+
+        <div onmouseout="acao5()" style="background: #080b8d; height: 150px; width: 150px; text-align: center; color: white;">
+            Passe o cursor do mouse no bloco, mas não saia dele.
+        </div>
+
+
+
+    </body>
+</html>

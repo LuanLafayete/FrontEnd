@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript - DOM parte 3</title>
+    </head>
+
+    <script>
+        function distribuiCaracter() {
+            //Selecionar o valor digitado
+            var caracter = document.getElementById('entrada').value;
+
+            //limpar o valor digitado
+            document.getElementById('entrada').value = '';
+
+            //Limpar espaços em brancos nas extremidades da string
+            caracter.trim();
+
+            switch (caracter) {
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    //Adiciona o caracter no campo referente a números
+                    document.getElementById('apenasNumeros').value += caracter;
+                    break;
+
+                    default:
+                        //Adiciona o caracter no campo referente a letras
+                        document.getElementById('apenasLetras').value += caracter;
+            }
+        }
+    </script>
+
+    <body>       
+        
+        <input 
+            type="text" 
+            placeholder="Digite aqui" 
+            onkeyup="distribuiCaracter()"
+            id="entrada"        
+        >
+
+        <hr>
+        <span>Letras</span>
+        <input type="text" disabled="disabled" id="apenasLetras">
+
+        <span>Números:</span>
+        <input type="text" disabled="disabled" id="apenasNumeros">
+
+    </body>
+
+</html>

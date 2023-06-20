@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Testando o código</title>
+
+        <script>
+            function CapturaEntrada() {
+                var entrada = document.getElementById('numeroLetra').value;
+
+                //Limpa o placeholder
+                document.getElementById('numeroLetra').value = '';
+
+                //Limpa os espaços em branco
+                entrada.trim();
+
+
+                if (entrada == '0' || entrada == '1' || entrada == '2' || entrada == '3' || entrada == '4' || entrada == '5' ||
+                entrada == '6' || entrada == '7' || entrada == '8' || entrada == '9') {
+
+                    //Adiciona nos números
+                    document.getElementById('numeros').value += entrada;
+                    
+                } else {
+                     //Adiciona nas letras
+                     document.getElementById('letras').value += entrada;
+                }
+
+
+            }
+            
+        </script>        
+    </head>
+
+    <body>
+
+        <input type="text" placeholder="Digite aqui" onkeyup="CapturaEntrada()" id="numeroLetra">
+
+        <hr>
+
+        <span>Números</span>
+        <input type="text" disabled id="numeros">
+
+        <span>Letras</span>
+        <input type="text" disabled id="letras">
+
+
+        
+
+    </body>
+</html>

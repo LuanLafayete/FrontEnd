@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM Desafio</title>
+
+        <script>
+            function acionaCampo() {
+                document.getElementById('campo').style.background = 'yellow';
+            }
+
+            function validaCampo() {
+                var valorCampo = document.getElementById('campo').value
+
+                if (valorCampo.lenght < 3) {
+                    document.getElementById('campo').style.background = 'red'
+                } else {
+                    document.getElementById('campo').style.background = 'green'
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h3>Desafio DOM</h3>
+        <input id="campo" type="text" onfocus="acionaCampo()" onblur="validaCampo()">
+    </body>
+</html>

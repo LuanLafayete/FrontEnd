@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascrip - Array Incluir e Remover</title>
+
+        <script>
+
+            var listaCoisas = [];
+
+            listaCoisas['fruta'] = [];
+            listaCoisas['pessoa'] = [];
+
+            //Adicionar item no final do Array
+            listaCoisas['fruta'].push('Uva');
+            listaCoisas['fruta'].push('Morango');
+            listaCoisas['fruta'].push('Pera');
+
+            listaCoisas['pessoa'].push('Sebastião');
+            listaCoisas['pessoa'].push('André');
+            listaCoisas['pessoa'].push('Vanessa');
+            
+
+            //Adicionar item no início do Array
+            listaCoisas['fruta'].unshift('Seriguela');
+
+            listaCoisas['pessoa'].unshift('Leonardo');
+
+            //Remover o item no final do Array
+            listaCoisas['fruta'].pop();
+
+            listaCoisas['pessoa'].pop();
+
+            //Remover o item no início do Array
+            listaCoisas['fruta'].shift();
+            
+            listaCoisas['pessoa'].shift();
+
+            console.log(listaCoisas);
+
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascrip - Array Pesquisa</title>
+
+        <script>
+
+            var listaOjectos = [];
+
+            listaOjectos[0] = 'Garrafa';
+            listaOjectos[1] = 'Computador';
+            listaOjectos[2] = 'Controle';
+            listaOjectos[3] = 'Mouse';
+            listaOjectos[4] = 'Teclado';
+            listaOjectos[5] = 'Fone';
+            listaOjectos[6] = 'Abajour';
+            listaOjectos[7] = 'Televisão';
+            listaOjectos[8] = 'Roteador';
+            listaOjectos[9] = 'Caderno';
+
+            console.log(listaOjectos.sort()); //O sort é um organizador alfabético
+
+            var listaNumeros = Array();
+
+            listaNumeros[0] = 120;
+            listaNumeros[1] = 29;
+            listaNumeros[2] = 3;
+            listaNumeros[3] = 155;
+            listaNumeros[4] = 400;
+            listaNumeros[5] = 2;
+            listaNumeros[6] = 7;
+            listaNumeros[7] = 11;
+            listaNumeros[8] = 300;
+
+            console.log(listaNumeros.sort(organizaNumeros)); //Nesse caso é preciso ensinar o sort a organizar os números com uma função
+
+            function organizaNumeros (a, b) {
+                return a - b;
+
+                // < 0 = a é ordenado antes de b
+                // > 0 = b é ordenado antes de a
+                //== a ordem pe mantida
+            }
+
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>

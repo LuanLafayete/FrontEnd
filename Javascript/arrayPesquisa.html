@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascrip - Array Pesquisa</title>
+
+        <script>
+
+            var listaOjectos = [];
+
+            listaOjectos[0] = 'Garrafa';
+            listaOjectos[1] = 'Computador';
+            listaOjectos[2] = 'Controle';
+            listaOjectos[3] = 'Mouse';
+            listaOjectos[4] = 'Teclado';
+            listaOjectos[5] = 'Fone';
+            listaOjectos[6] = 'Abajour';
+            listaOjectos[7] = 'Televisão';
+            listaOjectos[8] = 'Roteador';
+            listaOjectos[9] = 'Caderno';
+
+            var auxiliar = listaOjectos.indexOf('Caderno');
+
+            if (auxiliar === -1) {
+                console.log("Item não encontrado na pesquisa");
+            } else {
+                console.log('Item encontado na pesquisa e localizado na posição ' + auxiliar);
+            }
+
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>

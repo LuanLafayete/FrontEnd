@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript - Repetiçao Foreach</title>
+
+        <script>
+
+            var listaFuncionarios = []
+
+            listaFuncionarios[0] = 'James';
+            listaFuncionarios[1] = 'Ana';
+            listaFuncionarios[2] = 'Peter';
+            listaFuncionarios[3] = 'Edward';
+            listaFuncionarios[4] = 'Amanda';
+            listaFuncionarios[5] = 'Erica';
+            listaFuncionarios[6] = 'John';
+            listaFuncionarios[7] = 'Miiake';
+            listaFuncionarios[8] = 'Helen';
+
+            var f = function(valor, indice, array) {
+                console.log(valor, indice);
+            }
+
+            //foreach somente funciona com números partindo de 0
+            listaFuncionarios.forEach(f)
+
+
+            /*
+            console.log(listaFuncionarios);
+
+            listaFuncionarios.forEach(function(valor, indice, array) {
+                console.log('Índice: ' + indice + ' | Valor: ' + valor);
+
+                if (valor == 'Erica') {
+                    array[indice] = 'Aqui nós temos um problema'
+                }
+            })
+
+            console.log(listaFuncionarios);
+            */
+
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>

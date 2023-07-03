@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript - Funções Parâmetros Variáveis 2</title>
+
+        <script>
+
+            function soma() {
+                var resultado = 0;
+
+                for(var i in arguments) {
+                    //resultado = resultado + argunments[i];
+                    resultado += arguments[i];
+                }
+
+                return resultado;
+            }
+
+            console.log(soma(7, 5, 3.2, 0.8, 'Texto'));
+            document.write(soma(7, 5, 3.2, 0.8, 'Texto'));
+            
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>

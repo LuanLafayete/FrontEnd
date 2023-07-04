@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>BOM - Window</title>
+
+        <script>
+
+            var janela;
+
+            function abrirPopUp() {
+                janela = window.open('http://www.google.com', 'Google', 'width=100', 'height=100');
+            }
+
+            function fecharPopUp() {
+                janela = window.close();
+            }
+            
+        </script>
+    </head>
+
+    <body>
+        <h1>BOM window</h1>
+        <p>
+            O BOM (Browser Object Model) são recursos que são obtidos diretamnte do Browser. <br>
+            Diferente do DOM (Document Object Model) que são recursos que são obtidos das tags HTML <br>
+            <a href="https://www.w3schools.com/js/js_window.asp">Leia mais</a>
+        </p>
+        
+        <br>
+
+        <h2>BOM Window</h2>
+        <p>Vamos ver como funciona o elemento window do BOM de forma prática</p>
+
+        <button onclick="abrirPopUp()">Abrir janela</button>
+        <button onclick="fecharPopUp()">Fechar janela</button>
+        <button onclick="window.print()">Imprimir</button>
+
+    </body> 
+</html>
